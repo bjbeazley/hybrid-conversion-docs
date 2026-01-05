@@ -1,0 +1,2 @@
+# List of latex documents to publish to GitHub
+docs/system_design/requirements_analysis.tex
