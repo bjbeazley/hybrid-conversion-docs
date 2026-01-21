@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install mkdocs
-          # pip install mkdocs-material  # if you're using this theme
+          pip install mkdocs-bootswatch # 3rd party theme
 
       - name: Build site
         run: mkdocs build --strict
