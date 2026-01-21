@@ -1,2 +1,5 @@
 # MkDocs build folder
 site
+
+# Python
+.venv
