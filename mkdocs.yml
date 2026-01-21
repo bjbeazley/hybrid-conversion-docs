@@ -2,4 +2,4 @@ site_name: Hybrid Conversion
 nav:
   - Home: index.md
   - System Design: design.md
-theme: mkdocs
+theme: flatly
