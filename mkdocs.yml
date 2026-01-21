@@ -1,1 +1,5 @@
-site_name: My Docs
+site_name: Hybrid Conversion
+nav:
+  - Home: index.md
+  - System Design: design.md
+theme: mkdocs
