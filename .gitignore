@@ -1,7 +1,2 @@
-# Latex build files
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.pdf
-*.synctex.gz
+# MkDocs build folder
+site
