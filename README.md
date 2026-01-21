@@ -2,25 +2,13 @@
 Documentation repo for a hybrid vehicle conversion project
 
 ## Deployment
-This repo contains source for a static site generator which is being published to GitHub Pages. Pages always contains the latest content from the `main` branch and is automatically updated when changes merge.
+This repo contains source for the Material static site generator which is being published to GitHub Pages. 
+Pages always contains the latest content from the `main` branch and is automatically updated when changes merge.
 
 ## Development
-To preview the site created by MkDocs, without installing theme packages locally do the following
+To preview the site created by Material, without installing locally use the following command
 
 ```
-# 1. Create a venv
-python -m venv .venv
-
-# 2. Activate it
-# macOS / Linux:
-source .venv/bin/activate
-# Windows (PowerShell):
-# .venv\Scripts\Activate.ps1
-
-# 3. Install MkDocs + any themes/plugins *into the venv only*
-pip install mkdocs-bootswatch
-
-# 4. Run the dev server
-mkdocs serve
+docker run --rm -it --net=host -v ${PWD}:/docs squidfunk/mkdocs-material serve
 ```
 
