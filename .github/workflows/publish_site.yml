@@ -31,8 +31,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs
-          pip install mkdocs-bootswatch # 3rd party theme
+          pip install mkdocs-material
 
       - name: Build site
         run: mkdocs build --strict
