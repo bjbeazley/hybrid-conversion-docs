@@ -18,7 +18,7 @@ Using an industrial diesel engine is admittedly not as practical as using a ligh
 ### Myself
 The primary stakeholder in this project is myself. I want to do a hybrid conversion for the reasons previously listed and I will be funding the project. Once complete, I will be the primary driver of the vehicle.
 
-### friends
+### Friends
 Once the conversion is complete I would like to be able to use the hybrid for road trips with FR-iends. This means that the vehicle must be reliable, comfortable, and quiet to avoid disrupting plans.
 
 ### Roommates
