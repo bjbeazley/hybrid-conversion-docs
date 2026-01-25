@@ -18,7 +18,7 @@ Using an industrial diesel engine is admittedly not as practical as using a ligh
 ### Myself
 The primary stakeholder in this project is myself. I want to do a hybrid conversion for the reasons previously listed and I will be funding the project. Once complete, I will be the primary driver of the vehicle.
 
-### friends
+### Friends
 Once the conversion is complete I would like to be able to use the hybrid for road trips with FR-iends. This means that the vehicle must be reliable, comfortable, and quiet to avoid disrupting plans.
 
 ### Roommates
@@ -71,7 +71,7 @@ The following requirements indicate the characteristics that the vehicle shall h
 | NFR-2 | Vehicle top speed shall be at least 85 mph on level terrain |
 | NFR-3 | Vehicle must be able to drive at 70 mph continuously on level terrain |
 | NFR-4 | Noise level shall not exceed 85 dB in any seating position when driving at 75 mph on a smooth road |
-| NFR-5 | Electric only range shall be at least 5 miles at a steady 65 mph driving at sea level on approximately level terrain |
+| NFR-5 | Electric only range shall be at least 5 miles at a steady 35 mph driving at sea level on approximately level terrain |
 | NFR-6 | Vehicle shall have at least a 300 mile range combined between EV and ICE when driving at 65 mph at sea level on approximately level terrain |
 | NFR-7 | It shall be possible to drive in EV only mode between 5C and 25C ambient temperatures |
 | NFR-8 | It shall be possible to drive continuously in hybrid mode between -40C and 50C ambient temperatures |

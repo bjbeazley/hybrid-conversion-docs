@@ -7,3 +7,12 @@ theme:
   name: material
   logo: assets/check_engine.png
   favicon: assets/check_engine.png
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
