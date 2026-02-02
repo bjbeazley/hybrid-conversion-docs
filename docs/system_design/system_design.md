@@ -192,7 +192,7 @@ The Deutz F4L912 is 300 lbs lighter, and is air cooled so it does not need a rad
 
 ## Summary
 
-This project will use a **parallel hybrid architecture** where the battery and ICE are both capable of directly providing power to the wheels in any proportion from 0-100%. This is the easiest to implement with existing parts while achieving high efficiency.
+This project will use a ** redundant parallel hybrid architecture** where the battery and ICE are both capable of directly providing power to the wheels in any proportion from 0-100%. This is the easiest to implement with existing parts while achieving high efficiency.
 
 The vehicle used for the project will be a **1968 International Harvester Travelall** because it can seat 6-8 people, has plenty of space for drivetrain and battery parts, and I think it looks cool.
 
