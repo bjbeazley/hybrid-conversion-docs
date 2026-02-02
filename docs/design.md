@@ -9,3 +9,7 @@ The [V-Model](https://en.wikipedia.org/wiki/V-model) of systems development was 
 [System Design](system_design/system_design.md) - High level design of the project
 
 [Architectural Design](system_design/architectural_design.md) - Decomposing the project into modules and defining dependencies
+
+### Modules
+
+[Powertrain Module Design](system_design/powertrain_module_design.md)

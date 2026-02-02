@@ -155,40 +155,6 @@ To estimate the power consumption per mile the Hummer EV will be used for refere
 ### Power
 To meet [NFR-3](requirements_analysis.md#non-functional-requirements) the combustion engine must be able to produce enough power to propel the vehicle without assistance from the battery at 70 mph. Using the same [estimate](#capacity) of power consumption for the Hummer EV it can be expected that a Travelall can get 1.5 miles per kWh at 70 mph or 0.67 kWh/mi. The estimate for power output is $0.67 kWh/mi \times \frac{70mi}{1h} = 46.9 kW$.
 
-### Engine Model
-
-Engine selection is one of the most subjective aspects of this project which has implications on other aspects like the donor vehicle body. The selection criteria admittedly boils down to engines I think are cool and produce enough horsepower.
-
-#### Deutz 912
-
-The Deutz 912 series are air cooled diesel engines with individually replacable cylinder liners or 'jugs'. It is known for being extremely long lasting and fuel efficient. It is available in 3-6 cylinder versions which share the same cylinder heads but different crankcases and crankshafts. The 4 cylinder version (F4L912) produces 51 kW (68 hp) which is sufficient for this project. It weighs 661 lbs dry.
-
-<figure markdown="span">
-  ![Deutz F4L912](images/deutz_f4l912.jpg)
-  <figcaption>Deutz F4L912</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![Deutz 912 Series HP and Torque Curve](images/deutz_912_hp_curve.png)
-  <figcaption>Deutz 912 Series HP and Torque Curve</figcaption>
-</figure>
-
-#### Perkins 4.236
-
-The Perkins 4.236 is a water cooled 4 cylinder, 236 cubic inch (3.9L) diesel engine. It was produced from 1964 and had a production run of over 30 years with over 2 million being made. It has replacable dry cylinder liners. It can produce around 56 kW (75 hp) and weighs 965 lbs dry.
-
-
-<figure markdown="span">
-  ![Perkins 4.236](images/perkins_4.236.jpeg)
-  <figcaption>Perkins 4.236</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![Perkins 4.236 HP and Torque Curve](images/perkins_hp_curve.jpg)
-  <figcaption>Perkins 4.236 HP and Torque Curve</figcaption>
-</figure>
-
-The Deutz F4L912 is 300 lbs lighter, and is air cooled so it does not need a radiator which further amplifies the weight difference and improves packaging so it will be used for this project. For reference one of the most common engines that would originally have come in in International Travelall is the SV345 which weighs 725 lbs dry.
 
 ## Summary
 
