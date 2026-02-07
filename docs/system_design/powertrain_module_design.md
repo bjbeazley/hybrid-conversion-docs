@@ -85,12 +85,11 @@ Being liquid cooled it is the most straightforward to convert to run on vegetabl
 
 ## Transmission Selection
 
-The project will use a manual transmission.
-Although an automatic transmission will probably make for a more seamless user experience, it just doesn't give me the same level of satisfaction to use an automatic even though it would be a practical decision and allow other people to drive the vehicle easier.
-Even though the decision is not based in objectivity, what is the point of doing a DIY hybrid conversion without enjoying the process (primary stakeholder satisfaction)?
+As mentioned in the [Vehicle Control](vehicle_control_module_design.md#transmission) documentation it is not yet determined if a manual or automatic transmission will be used. The following sections cover transmission selection grouped by manual or automatic.
 
+### Manual
 
-### New Venture Gear 4500 (NV4500)
+#### New Venture Gear 4500 (NV4500)
 
 The [NV4500](https://www.novak-adapt.com/knowledge/transmissions/manual/nv4500.html) is a 5 speed manual transmission used in GM and Dodge trucks in the 1990s and 2000s.
 It is available with a wide or narrow gear ratio spread.
@@ -110,13 +109,13 @@ The NV4500 weighs around 195 lbs, and is 18.9" long.
 The NV4500 has a separate bell housing which makes it easier to attach to different engines.
 The NV4500 is rated for an input torque of [460 ft-lbs](https://4btengines.com/how-to-pick-the-right-transmission-for-your-4bt-cummins/?srsltid=AfmBOoopXrOEafVLXl0oa4Ln5MF7Tm1M9lwuARPaK-XaYYUYsaXTQq8p).
 
-### Ford ZF-5
+#### Ford ZF-5
 
 The [ZF 5](https://www.dieselhub.com/transmission/zf-5-speed.html) is a 5 speed manual transmission used in Ford diesel trucks from 1987 to 1997.
 The ZF 5 has a bellhousing integrated into the transmission casting making it challenging to use without a Ford engine and it will not be considered for this project.
 
 
-### Aisin AX-15
+#### Aisin AX-15
 
 The Aisin [AX-15](https://4btengines.com/how-to-pick-the-right-transmission-for-your-4bt-cummins/?srsltid=AfmBOoopXrOEafVLXl0oa4Ln5MF7Tm1M9lwuARPaK-XaYYUYsaXTQq8p) transmission is a 5 speed manual transmission used in Jeeps and the Dodge Dakota from 1989 to 1999.
 It has a separate bellhousing like the NV4500 making is easy to use with other engines with a custom bellhousing adapter.
@@ -134,13 +133,16 @@ The ratios for the gears are as follows, along with the percent decrease in rati
 The AX-15 is light at only [88 lbs dry](https://www.jeepforum.com/threads/ax-15-weighs-how-much.632462/), without a bellhousing.
 The AX-15 is rated for an input torque of 300 ft-lbs.
 
-### Decision Criteria
+#### Decision Criteria
+
+All of the transmissions are have overdrive top gears and are able to withstand the torque of the Perkins 4.236.
+This should result in excellent highway fuel economy since the engine RPMs can be kept below 2000 for fuel efficiency.
 
 The AX-15 is a promising option due to the much lighter weight than the NV4500. The main concern is the taller first gear compared to the NV4500. The high weight of a Travelall with the relatively low torque of the Perkins 4.236 risks not being able to climb the steeper hills of San Francisco if the battery is dead.
 
 The steepest street in San Francisco is Bradford Street at at 41% grade ($\arctan(0.41) = 22.29 ^{\circ}$).
 Assuming the travelall weighs 6000 lbs or 2700 kg (batteries will increase the weight beyond stock) it would take $2700 kg * 9.81m/s^2 \times \sin(22.29^{\circ}) = 10046 N$ of force to go up the hill.
-Assuming 32" diameter tires the following table shows the maximum traction force produced in first gear with several rear differential ratios assuming no drivetrain losses.
+Assuming 32" diameter tires the following table shows the maximum traction force at the road contact surface produced in first gear with several rear differential ratios assuming no drivetrain losses and using the peak torque of the Perkins 4.236 of 185 ft-lbs.
 Even with 4.10 gearing in the differential, which would result in high RPMs on the highway and worse fuel economy, the Travelall would struggle to move up the hill with the AX-15.
 
 | Differential Ratio | Force (lbf) | Force (N) |
@@ -161,10 +163,111 @@ The following table shows the force produced by the NV4500 in first gear.
 
 With the NV4500 it would be possible to make it up Bradford St. with all available differential ratios. For that reason, the NV4500 will be used for this project despite its weight.
 
+### Automatic
+
+All automatic transmissions would be equipped with a locking low stall torque converter aiming to put the stall speed around 1600 rpm which at the peak of the Perkins 4.236 torque curve.
+Torque converters allow slip between the transmission and engine which is especially useful when accelerating from a stop.
+Torque converters can provide additional torque multiplication when the input and output speeds of the torque converter differ, increasing to a roughly 2x torque multiplication at the stall point.
+This gives vehicles with automatic transmissions the ability to accelerate quickly from a stop or start move a heavy vehicle up a hill without an extremely low first gear ratio at the expense of efficiency since energy is wasted when the torque converter is slipping.
+Locking torque converters can prevent the torque converter from slipping once the input and output speeds have equalized eliminating the inefficiency of slipping.
+
+#### GM 4L60-E
+
+The [4L60-E](https://www.novak-adapt.com/knowledge/transmissions/automatic/4l60e.html) transmission is a 4 speed automatic with a locking torque converter and a tall overdrive gear and was introduced in 1990.
+It weighs roughtly 146 lbs dry / 162 lbs wet and is 21.9" long including the bellhousing, which is removable.
+It is electrically controlled allowing an external controller to perform gear shifts, control torque converter lockup, and adjust shift firmness.
+
+| Gear | Ratio | Percent Decrease from Previous Gear
+| :-: | :-: | :-: |
+| 1st | 3.06 | - |
+| 2nd | 1.63 | 46.7% |
+| 3rd | 1 | 38.7% |
+| 4th | 0.70 | 30% |
+| Reverse | Not specified | - |
+
+The 4L60 is light and the tall overdrive gear, locking torque converter, and electric control is attractive.
+The primary downside is reports of poor reliability.
+Common failures are the 3-4 clutch pack, sun gear, and shift solenoids.
+
+#### GM 4L80-E
+
+The [4L80-E](https://www.novak-adapt.com/knowledge/transmissions/automatic/4l80e.html) is a 4 speed automatic with a locking torque converter and a tall overdrive gear introduced in 1991 and a direct successor to the TH400 transmission used since 1964.
+It is 26.25" long and weights 254 lbs dry with the torque converter and 262 lbs wet.
+It is very similar to the 4L60 but intended for heavier duty applications and is less prone to failures.
+It is also electronically controlled.
+The 4L80 does not have a removable bellhousing although due to the transmission's popularity there are adapters to mate it to a variety of engines.
+
+| Gear | Ratio | Percent Decrease from Previous Gear
+| :-: | :-: | :-: |
+| 1st | 2.48 | - |
+| 2nd | 1.48 | 40.3% |
+| 3rd | 1 | 32.4% |
+| 4th | 0.70 | 30% |
+| Reverse | 2.07 | - |
+
+#### Ford E40D
+
+The [E40D](https://www.dieselhub.com/transmission/e4od.html) is i 4 speed automatic with a locking torque converter and a tall overdrive gear.
+It was in Ford trucks from 1989-1998.
+It is around 31.5" long according to a user on the [Ranger Station](https://www.therangerstation.com/forums/threads/e4od-length.103934/) forum and weighs ~270 lbs.
+It is unclear if this is wet or dry weight.
+The E40D is electrically controlled and is considered to be very similar to the 4L80E.
+
+| Gear | Ratio | Percent Decrease from Previous Gear
+| :-: | :-: | :-: |
+| 1st | 2.71 | - |
+| 2nd | 1.538 | 43.2% |
+| 3rd | 1 | 34.9% |
+| 4th | 0.71 | 30% |
+| Reverse | 2.07 | - |
+
+#### Decision Criteria
+
+All of these engines have tall overdrive gears which will keep the RPM low on the highway which improves fuel economy.
+The following tables show the traction force produced at the tire contact surface with the road following the same assumptions as was outlined for the [manual transmissions](#decision-criteria). It is assumed that the 
+
+**4L60**
+
+| Differential Ratio | Force (lbf) | Force (N) |
+| :----------------: | :---------: | :-------: |
+|        3.07        |   2,606.9   |  11,596.0 |
+|        3.54        |   3,006.0   |  13,371.3 |
+|        3.73        |   3,167.3   |  14,089.0 |
+|        4.10        |   3,481.5   |  15,486.6 |
+
+
+**4L80**
+
+| Differential Ratio | Force (lbf) | Force (N) |
+| :----------------: | :---------: | :-------: |
+|        3.07        |   2,112.8   |  9,398.1  |
+|        3.54        |   2,436.2   |  10,836.9 |
+|        3.73        |   2,567.0   |  11,418.5 |
+|        4.10        |   2,821.6   |  12,551.2 |
+
+**E40D**
+
+| Differential Ratio | Force (lbf) | Force (N) |
+| :----------------: | :---------: | :-------: |
+|        3.07        |   2,308.7   |  10,269.7 |
+|        3.54        |   2,662.2   |  11,841.9 |
+|        3.73        |   2,805.1   |  12,477.5 |
+|        4.10        |   3,083.3   |  13,715.2 |
+
+All transmissions would be able to move the Travelall up SF's Bradford St with all rear axle ratios, with the exception of the 4L80 with 3.07 gearing.
+The E40D is the largest and heaviest, and being a Ford specific transmission doesn't have as much adapter suport as the GM 4L60 and 4L80 so for that reason the E40D will not be used.
+The 4L60 is the smallest and lightest and would be the clear choice if it weren't for concerns over reliability.
+For that reason the 4L80 will be used, if this project uses an automatic transmission.
+
 ### Summary
 
-The NV4500 transmission will be used behind the combustion engine because of the tall overdrive gear, and the low first gear that is able to get the Travelall up steep San Francisco hills.
+#### Manual
 
+If the project uses a manual transmission, the NV4500 transmission will be used behind the combustion engine because of the tall overdrive gear, and the low first gear that is able to get the Travelall up steep San Francisco hills.
+
+#### Automatic
+
+If the project uses an automatic transmission, the 4L80 will be used because of the high overdrive gear, electronic shift control, and excellent reputation for reliability.
 
 ## Drivetrain Layout
 
@@ -349,21 +452,115 @@ The crossover pipe will be located near the bellhousing between the engine and t
 
 ## Controls
 
-
-```plantuml
-@startuml
-Bob -> Alice : hello
-@enduml
-```
+The following state diagram hows in more detail the implementation of the drive modes specified in the [Vehicle Control module](vehicle_control_module_design.md#drive-mode-selection).
+In order to smoothly transition between drive modes, the transfer case must be shifted when the driveshafts are at approximately equal speeds.
+For example, when switching between electric mode and hybrid mode first the engine must be on, then the engine must shift into an appropriate RPM for the desired power and road speed, then the engine RPMs are brought up to match the motor speed.
+Once the motor and engine shafts are within ~50 rpm the transfer case can be shifted coupling the two shafts together.
+Once the two motors are coupled, the gas motor can start to apply torque.
+Not pictured in this diagram is error handling, transmission or throttle logic, or sensor reading.
 
 ```plantuml
 @startuml sign_in_sequence  
   
-title "Sign In Sequence Diagram"  
+title "Drive Mode State Diagram"  
   
-actor User  
-participant "@action authenticate" as authenticate
-entity User as UserModel  
-  
-User -> authenticate: {"email": email, "password": password}
+[*] --> powered
+
+state powered as "Powered" {
+
+  powered --> hybrid_mode: Transfer case in Hybrid mode
+  powered --> gas_mode: Transfer case in Gas mode
+  powered --> electric_mode: Transfer case in Electric mode
+
+  state hybrid_mode as "Hybrid Mode" {
+
+    hybrid_mode --> coast_engine: Electric mode requested
+    coast_engine --> shift_to_electric: Engine coasted and \nElectric speed requested
+
+    hybrid_mode --> hybrid_mode: Hybrid mode requested
+
+    state coast_engine as "Coast Engine"
+    state shift_to_electric as "Shift To Electric"
+
+  }
+
+  state gas_mode as "Gas Mode" {
+
+    gas_mode --> motor_speed_match: Hybrid or Electric mode requested
+    motor_speed_match --> shifing_gas_to_hybrid: Motor speed matched and \nHybrid or Electric mode requested
+
+    state motor_speed_match as "Motor Speed Matching"
+    state shifing_gas_to_hybrid as "Shifting Gas to Hybrid"
+
+    gas_mode --> gas_mode: Gas mode requested
+
+  }
+
+  state electric_mode as "Electric Mode" {
+
+    electric_mode ----> engine_on: Engine started
+    
+    electric_mode --> starting_engine: Hybrid or Gas mode requested
+
+    starting_engine -l-> electric_mode: Electric mode requested
+
+    state starting_engine as "Starting Engine"
+
+    state engine_on as "Engine On" {
+
+      engine_on --> engine_on: Electric mode requested
+
+      engine_on --> engine_rpm_matching: Hybrid or Gas mode requested
+      engine_rpm_matching --> shifting_electric_to_hybrid: RPM matched and \nHybrid or Gas mode requested
+
+      state engine_rpm_matching as "Engine RPM Matching"
+      state shifting_electric_to_hybrid as "Shifting Electric To Hybrid"
+
+    }
+
+  }
+
+}
+
+
 ```
+
+### Sensors
+
+The following sensors are required for the powertrain
+
+- Engine Jackshaft speed
+    - Can be done with a transfer case output shaft speed sensor.
+    - Transfer case is switched backwards so the usual output shaft is connected to the transmission not the rear axle as originally intended.
+- Motor Jackshaft speed
+    - The EM61 motor already has a speed sensor built into the motor housing.
+    - Using the fixed ratio of the reduction gearbox the jackshaft speed can be determined.
+- Transfer case shift position sensor
+    - Required to know what drive mode is active (gas, electric, hybrid, or neutral)
+    - NP205 transfer case may have a 4x4 sensor which indicates whether the transfer case is in 4x4 mode or not. However, because a "twin stick" mod is required to get independ operation of each shaft of the transfer case this is not sufficient.
+    - The best solution may be a sensor on the 4x4 actuator itself, or a custom sensor built into the transfer case.
+- Engine RPM
+    - The Perkins 4.236 sometimes came with a RPM sensor running off the flywheel depending on application. If the engine is not equipped with a RPM sensor one can be added.
+- Transmission Neutral / Park sensors
+    - To determine if the engine RPM is coupled to the jackshaft in order to perform engine RPM matching when coupling to the electric motor.
+- Injection pump position sensor
+    - Required to predict the torque produced by the engine at a given throttle position.
+    - Dyno testing is required to create a map of engine RPM and injection pump position to torque.
+- Pressure / Temperature Sensors (and boost sensor if engine has turbo)
+    - Required to predict the power output of the engine at different ambient conditions than the conditions of the dyno test.
+
+
+### Actuators
+
+  The following actuators are required for the powertrain
+
+- Transfer case shifter
+    - The NP205 transfer case only came in manual shift, not electric shift.
+    - Two linear actuators can be used to shift each shift rail.
+    - Because of the possibility of transfer case binding lead screw actuators require additional care to prevent stalling and damaging the actuator
+    - Pneumatic actuators are the best solution because they can shift quickl and hold pressure until a shift is complete if the gears are binding but requires an onboard air compressor.
+- Injection pump actuator
+    - An actuator is required to turn the throttle on the injection pump.
+    - A servo motor would work well in this application although depending on the injection pump return spring strength a servo may be expensive.
+    - Alternatives to a servo are a stepper motor or a DC motor with an encoder.
+
