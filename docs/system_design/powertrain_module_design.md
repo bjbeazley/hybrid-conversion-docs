@@ -348,3 +348,22 @@ The crossover pipe will be located near the bellhousing between the engine and t
 
 
 ## Controls
+
+
+```plantuml
+@startuml
+Bob -> Alice : hello
+@enduml
+```
+
+```plantuml
+@startuml sign_in_sequence  
+  
+title "Sign In Sequence Diagram"  
+  
+actor User  
+participant "@action authenticate" as authenticate
+entity User as UserModel  
+  
+User -> authenticate: {"email": email, "password": password}
+```
