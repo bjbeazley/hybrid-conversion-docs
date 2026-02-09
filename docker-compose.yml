@@ -1,0 +1,10 @@
+services:
+  material-server:
+    image: app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/docs
+    ports:
+      - 8000:8000

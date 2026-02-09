@@ -9,6 +9,6 @@ Pages always contains the latest content from the `main` branch and is automatic
 To preview the site created by Material, without installing locally use the following command
 
 ```
-docker run --rm -it --net=host -v ${PWD}:/docs squidfunk/mkdocs-material serve
+docker compose up
 ```
-
+Note: To refresh the site preview stop and restart the docker compose stack.

@@ -2,7 +2,7 @@ site_name: Hybrid Conversion
 site_url: https://bjbeazley.github.io/hybrid-conversion-docs/
 nav:
   - Home: index.md
-  - System Design: design.md
+  - Design: design.md
 theme:
   name: material
   logo: assets/check_engine.png
@@ -13,6 +13,8 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - pymdownx.arithmatex:
       generic: true
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
