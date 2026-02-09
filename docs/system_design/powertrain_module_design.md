@@ -450,6 +450,26 @@ The crossover pipe will be located near the bellhousing between the engine and t
 </figure>
 
 
+## Steering
+
+The 1960s IH Travelalls may or may not have power steering.
+As mentioned in [Vehicle Control Module](vehicle_control_module_design.md#steering), non power steering is acceptable and assist will not be added, at least for now.
+Travelalls may or may not have collapsible steering columns which is a safety concern so the steering column will be upgraded to use a collapsible column if not already equipped.
+
+## Brakes
+
+The 1960s Travelalls came with hydraulic drum brakes on all 4 wheels.
+Depending on the year it may or may not have a dual circuit braking system which allows for partial brake function if either circuit fails compared to the old single circuit brakes which fail completely if any part of the system fails.
+Drum brakes if correctly adjusted have excellent braking ability and will be kept.
+If the donor vehicle has single circuit brakes they will be updated to dual circuit brakes.
+If the donor vehicle has hydraulic power steering, hydroboost power steering may be added, otherwise brakes will be left with no power assist.
+
+### Parking Brake
+
+The Travelall may have a parking brake on the driveshaft rather than on the rear drum brakes like most other models.
+A driveshaft parking brake will likely have to be removed as part of the conversion.
+If so, the rear drum brakes will be modified to include a parking brake cable.
+
 ## Controls
 
 The following state diagram hows in more detail the implementation of the drive modes specified in the [Vehicle Control module](vehicle_control_module_design.md#drive-mode-selection).
