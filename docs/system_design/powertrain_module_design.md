@@ -269,6 +269,7 @@ If the project uses a manual transmission, the NV4500 transmission will be used 
 
 If the project uses an automatic transmission, the 4L80 will be used because of the high overdrive gear, electronic shift control, and excellent reputation for reliability.
 
+
 ## Drivetrain Layout
 
 The IH Travelall was available in rear wheel drive and all wheel drive models.
@@ -412,6 +413,36 @@ It is possible to fit the EM61 between the frame rail and driveshaft.
 The EM61 and Hyper9 motors are both able to fit in between the frame rail and the driveshaft which allows for the most efficient packaging and leaves the most room for a battery pack but EM61 is more powerful and cheaper, even when buying used.
 The EM61 will be used for this project.
 The Hyper9 will be a backup option if for an unforseen reason the EM61 is found to not be possible during implementation.
+
+## Transfer Case Selection
+
+Some sort of transfer case is needed to split power between the electric motor and combustion engine.
+Normally part time 4x4 transfer cases are used to split torque from the engine to the front and rear axles.
+They are built to handle extreme loads because the transfer case handles engine torque multiplied by the first gear ratio of the transmission.
+In theory, it should be possible to connect one of the "outputs" on the transfer case to an electric motor allowing two inputs to power a single output shaft leading to the drive axle.
+
+Because the electric motor is located to the rear of the transfer case the transfer case must have two input / outputs pointed to the rear of the vehicle.
+Ordinarily in a 4x4 vehicle the side of the transfer case with two input / outputs points to the front of the vehicle, so the transfer case would need to be reversed to face the other direction.
+Most transfer cases mount directly to the rear of a transmission via an adapter and are not possible to turn around without extensive work to fabricate an output housing on the usual input shaft.
+The exception are divorced transfer cases.
+A divorced transfer case means it was not mounted directly behind the transmission but instead connected via a short jackshaft and therefore has yokes or flanges on all input / output shafts.
+
+4x4 International Travelalls came equipped with passenger drop transfer cases meaning the transfer case is offset to the pasenger side when installed normally
+Reversing the transfer case would mean the electric motor would have to be offset to the drivers side
+This would work, but it prevents eventually converting the project to be four wheel drive (out of scope of this project but it would be nice to have the option).
+Some transfer cases are possible to modify to have two front and two rear inputs / outputs vs the usual two front one rear.
+There are also a couple aftermarket companies making transfer cases with two rear outputs for niche 6x6 vehicles.
+By keeping the electric motor mounted on the passenger side it leaves the door open for installing a "6x6" transfer case in the future to drive a front axle.
+
+To get an electric only drive mode with a reversed transfer case it must be possible to shift the transfer case into what would normally be a front wheel drive mode.
+This is generally not an option with transfer cases without a "twin stick" modification, meaning that the two outputs can be engaged independently.
+In general only gear driven transfer cases are possible to twin stick.
+Gear driven cases are usually less efficient than their chain driven counterparts due to the increased rotating mass and gear oil lubrication vs the lighter rotating mass and ATF in chain driven cases.
+Some OEMs spec ATF in their gear driven cases to improve efficiency.
+
+Considering the need for a divorced, drivers drop, and twin stick moddable transfer case there is one clear option: the NP205 used in 1970s Ford trucks.
+It is a gear driven transfer case with manual shift and optional 4x4 sensor.
+Aftermarket transfer cases would also work but are much more expensive than a used NP205.
 
 
 ## Fuel Tank
