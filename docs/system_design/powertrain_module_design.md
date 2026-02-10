@@ -388,7 +388,7 @@ It is possible to fit the EM61 between the frame rail and driveshaft.
 The [NetGain HyPer 9](https://www.go-ev.com/motors-hyper.html) is a Synchronous Reluctance Internal Permanent Magnet (SRIPM) motor often used in EV conversion. It is  capable of producing 95 kW peak, and [41.5](https://www.go-ev.com/PDFs/HyPer_9_108V_Continuous_Performance.pdf) kW continuously.
 The HyPer 9 is capable of operating at up to 8000 rpm and reaches full power at 4000+ RPM so will need a reduction gearbox.
 Is is very compact with high availability of parts support.
-It is available new for ~$3000 USD. Used, it is available for ~$2-3k USD.
+It is available new for ~\$3000 USD. Used, it is available for ~\$2-3k USD.
 
 <figure markdown="span">
   ![HyPer9 Motor](images/hyper9.jpeg)
