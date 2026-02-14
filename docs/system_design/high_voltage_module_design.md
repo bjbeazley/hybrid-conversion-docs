@@ -82,21 +82,11 @@ The original battery pack routed the AC lines under each module.
 Given that the batteries are relatively inexpensive, a simple glycol and water coolant loop could be routed through custom chill plates to a radiator instead. 
 If the battery temperatures are shown to be too high, a heat pump could be retrofitted to chill the coolant, rather than route refrigerant lines through the battery pack.
 
+Eight battery modules would easily fit in the Travelall (432 lbs not including cooling) wired in series to make a 384v battery pack, but this would mean a total capacity of only 21.6 kWh, a little short of the 23.3 kWh battery capacity [required](system_design.md#capacity). The Nissan leaf battery pack was 384V, and it is possible that adding another module in series could result in a pack [voltage](https://www.diyelectriccar.com/threads/leaf-inverter-voltage-input-limits.206166/) higher than the Leaf inverter can handle.
+It may not be possible to meet the pack capacity requirement, with the BMW i3 battery, but it comes close with efficient packaging and good performance.
 
-
-BMW i3 battery module meant for bottom chill plate, lower capacity per module
-8 fits easily for a 384v battery but is a little shy of the 23.3 kWh battery pack requirement. Pack would weigh ~432 lbs.
-Also needs chill plate (adds to weight and cost, but could maybe be done DIY affordably)
-
-specs:
-2.7 kWh
-48V
-54 lbs
-16.125"x12.25"x6"
-~225 each
 
 ### Tesla S/X Battery Modules
-
 
 Tesla battery modules have built in cooling meaning there is no need to build in separate battery pack cooling.
 Also means it's easier to put batteries in a couple different locations.
