@@ -15,3 +15,6 @@ The [V-Model](https://en.wikipedia.org/wiki/V-model) of systems development was 
 [Vehicle Control Module Design](system_design/vehicle_control_module_design.md)
 
 [Powertrain Module Design](system_design/powertrain_module_design.md)
+
+[High Voltage Module Design](system_design/high_voltage_module_design.md)
+
