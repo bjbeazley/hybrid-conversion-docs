@@ -8,3 +8,7 @@ services:
       - .:/docs
     ports:
       - 8000:8000
+    develop:
+      watch:
+        - action: restart
+          path: docs

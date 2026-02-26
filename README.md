@@ -7,8 +7,11 @@ Pages always contains the latest content from the `main` branch and is automatic
 
 ## Development
 To preview the site created by Material, without installing locally use the following command
-
 ```
 docker compose up
 ```
-Note: To refresh the site preview stop and restart the docker compose stack.
+
+To preview the site, with automatic re-generation when any file under `docs` is changed use
+```
+docker compose watch
+```
