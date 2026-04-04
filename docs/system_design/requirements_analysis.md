@@ -42,7 +42,7 @@ The following requirements indicate the characteristics that the vehicle shall h
 | FR-5 | Vehicle shall have interior heating |
 | FR-6 | Vehicle shall have exterior lighting in compliance with the California Motor Vehicle Code |
 | FR-7 | Vehicle shall have a speedometer |
-| FR-8 | Vehicle shall be possible to charge with a NACS compatible charger |
+| FR-8 | Vehicle shall be possible to charge with a NACS or CCS compatible charger |
 | FR-9 | Vehicle shall be able to drive on battery power alone |
 | FR-10 | Vehicle shall be able to drive using a hybrid of battery and ICE power |
 | FR-11 | Vehicle shall have indicator of remaining fuel |
@@ -60,8 +60,7 @@ The following requirements indicate the characteristics that the vehicle shall h
 | FR-23 | Vehicle shall take measures to minimize tailpipe emissions |
 | FR-24 | The total cost for the project (excluding the value of personal labor) shall not exceed $20k USD |
 | FR-25 | The total cost for the project (excluding the value of personal labor) shall not exceed $20k USD |
-| FR-26 | The ICE used shall have replaceable cylinder liners |
-| FR-27 | The ICE used shall run on diesel |
+| FR-26 | The ICE used shall run on diesel |
 
 ### Non-Functional Requirements
 
