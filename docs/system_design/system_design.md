@@ -69,7 +69,7 @@ Based on this comparison it seems clear that the redundant parallel hybrid archi
 
 ## Vehicle Platform
 
-The user requirements limit the body styles that are suitable for this project, especially the requirement to use a diesel engine with replaceable cylinder liners. These engines are generally heavy and large relative to the power they produce which necessitates a large and tall engine compartment and a large weight carrying capacity. Most vehicles that meet this criteria will be truck platforms. Most antique cars which I find appealing are characterized by long low hoods which unfortunately excludes them for this project but I have made my peace with that fact.
+The user requirements limit the body styles that are suitable for this project, especially the requirement to use a diesel engine with replaceable cylinder liners. These engines are generally heavy and large relative to the power they produce which necessitates a large and tall engine compartment and a large weight carrying capacity. Most vehicles that meet this criteria will be truck platforms. Most antique cars which I find appealing are characterized by long low hoods which unfortunately excludes them from this project but I have made my peace with that fact.
 
 <figure markdown="span">
   ![1958 Cadillac Eldorado](images/1958-cadillac-eldorado.jpeg)
@@ -100,7 +100,7 @@ Antique vans are classics and offer seating for 5-9 people. Older vans often had
 
 <figure markdown="span">
   ![1965 VW Transporter Van](images/1965_vw_type_2_van.jpeg)
-  <figcaption>1965 Vw Transporter Van</figcaption>
+  <figcaption>1965 VW Transporter Van</figcaption>
 </figure>
 
 ### SUV
@@ -131,7 +131,7 @@ I find the interior of the 1960's International Travelalls to be very appealing 
   <figcaption>1968 International Travelall Interior</figcaption>
 </figure>
 
-International Harvester was an American manufacturer of agricultural equipment, construction equipment, and commercial trucks which also dabbled in light duty trucks and off-road vehicles. The Travellal was the odd one out in their lineup. It was built on a heavy duty frame using the same components as their heavy duty trucks, but advertised primarily as a station wagon but ads also note it's capability towing or hauling building materials. It was an early precursor to what is considered a crossover today. 
+International Harvester was an American manufacturer of agricultural equipment, construction equipment, and commercial trucks which also dabbled in light duty trucks and off-road vehicles. The Travelall was the odd one out in their lineup. It was built on a heavy duty frame using the same components as their heavy duty trucks, but advertised primarily as a station wagon but ads also note it's capability towing or hauling building materials. It was an early precursor to what is considered a crossover today. 
 
 <figure markdown="span">
   ![What a Station Wagon is Supposed to Look Like](images/travelall_station_wagon_supposed_to_look_like.jpg)

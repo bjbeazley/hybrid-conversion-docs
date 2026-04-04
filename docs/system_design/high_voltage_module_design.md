@@ -64,7 +64,7 @@ The leaf batteries are a very affordable option to create a battery pack with a 
 The Nissan Leaf battery modules require a centralized (sometimes called direct-monitoring) BMS.
 The modules are simply energy storage and have no monitoring hardware or controller except at the pack level.
 Reusing OEM BMSs is generally not possible without a lot of effort reverse engineering because they most likely expect to receive specific CAN traffic from other modules in the vehicle which don't exist.
-There are many aftermardet BMSs available like the [Orion BMS](https://www.orionbms.com/products/orion-bms-standard/) or [Thunderstruck BMS](https://www.thunderstruck-ev.com/bms/) for under $1500.
+There are many aftermarket BMSs available like the [Orion BMS](https://www.orionbms.com/products/orion-bms-standard/) or [Thunderstruck BMS](https://www.thunderstruck-ev.com/bms/) for under $1500.
 
 ### BMW i3 Battery Module
 
@@ -151,14 +151,14 @@ Tesla battery modules use NCA chemistry which has fantastic energy density.
 A 12 module pack of S/X modules would weigh around 672 lbs and have a nominal capacity of 63.6 kWh.
 This is 89% higher power density compared to BMW i3 batteries even without including the cooling plates required for i3 batteries.
 However, NCA batteries are more prone to degradation than the NMC batteries used in BMW i3s and Nissan Leafs. 
-Buy because the energy density is so much higher it is likely that even with degradation the Tesla modules will offer more capacity than alternatives.
+But because the energy density is so much higher it is likely that even with degradation the Tesla modules will offer more capacity than alternatives.
 
 <figure markdown="span">
   ![12 Tesla Model S/X Battery Modules](images/12_tesla_modules.png)
   <figcaption>12 Tesla Model S/X Battery Modules</figcaption>
 </figure>
 
-The battery modules are expensive at ~$1400 USD from greentec or EV West which have warranties and / or track the milage of the vehicle they were removed from.
+The battery modules are expensive at ~$1400 USD from greentec or EV West which have warranties and / or track the mileage of the vehicle they were removed from.
 However, they are available at 25-50% of this price from other retailers or from ebay without warranty.
 Additional testing would be prudent if ordering from one of these sources.
 
@@ -286,12 +286,12 @@ To ensure that the high voltage system remains isolated from the chassis a high 
 
 #### Precharge
 
-Because the inverter or other high voltage electronics may have a high level of capacitance a precharge resistor is necessary to reduce inruch current and protect the contactors from arcing and eventual damage.
+Because the inverter or other high voltage electronics may have a high level of capacitance a precharge resistor is necessary to reduce inrush current and protect the contactors from arcing and eventual damage.
 Precharge resistors gradually allow the voltage from the battery to equalize on either side of a contactor before it closes.
 It is only required to have a precharge resistor on the high voltage or low voltage of the combined battery pack.
 
 For no particular reason the high voltage terminal of pack 2 will have a precharge resistor, although the low voltage terminal of pack 1 would also have worked.
-There is no need to have a precharge resistor on the high voltage terminal of pack 1 or the low voltage terminal of pack 2 because the connection between the packs is a simple wire which has negligable capacitance which means contactor arcing is not a concern.
+There is no need to have a precharge resistor on the high voltage terminal of pack 1 or the low voltage terminal of pack 2 because the connection between the packs is a simple wire which has negligible capacitance which means contactor arcing is not a concern.
 
 #### BMS
 
@@ -312,7 +312,7 @@ Using the BMS with a non-supported charger may require the use of a CAN translat
 The battery pack needs to be water-tight to prevent contamination which could contribute to the risk of internal short circuits.
 Although the battery pack should be water-tight, it should have the ability to vent pressure.
 In the event of thermal runaway pressure could build up in the pack which is a hazard.
-To prevent this, both packs should have a presure relief port.
+To prevent this, both packs should have a pressure relief port.
 
 Additionally, the pack needs to be impact resistant because it may be be exposed to road debris or potentially be deformed in a crash.
 As an additional measure of protection, a thin layer of insulation should be placed between each battery module in the pack so that in the event of damage to the pack the chances of conductive surfaces coming into contact is reduced.
@@ -352,7 +352,7 @@ This means that on 30C or higher days the battery may have to be derated to avoi
 
 Another solution is to use a heat pump with a heat exchanger to add or remove heat from the battery cooling loop.
 Not pictured is a reversing valve for the heat pump.
-In addition to the heat pump, there is also a radiator to more efficiently shed head without requiring running the heat pump compressor, and a bypass.
+In addition to the heat pump, there is also a radiator to more efficiently shed heat without requiring running the heat pump compressor, and a bypass.
 The resistive heater would only be used in extremely cold conditions because in mild weather the heat pump is more efficient.
 The heat pump would also be able to cool the coolant loop when ambient conditions are too hot for the radiator to keep the coolant in the optimal temperature range.
 
