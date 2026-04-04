@@ -10,7 +10,7 @@ However, because a significant motivation for this project is making something I
 ### Transmission
 
 I find manual transmissions much more engaging, and I like the fact that they are usually extremely durable with few failure points.
-For this project, I think an automatic transmision would result in a better driver experience, especially for people unfamiliar with the internal workings of the hybrid system.
+For this project, I think an automatic transmission would result in a better driver experience, especially for people unfamiliar with the internal workings of the hybrid system.
 It makes operating the vehicle consistent regardless of drive mode.
 Regardless of electric, hybrid, or gas only modes, making the vehicle move is as simple as pressing an accelerator pedal.
 Using a manual transmission would force the driver to use a transmission in some drive modes but not others which is confusing.

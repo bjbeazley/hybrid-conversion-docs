@@ -16,7 +16,7 @@ The final selection may be determined by factors other than the project requirem
 
 ### Deutz 912
 
-The [Deutz 912](https://www.deutzusa.com/fileadmin/contents/com/engines/datasheets/en/FL_912_Marine_EN.pdf) series are air cooled direct-injection diesel engines with individually replacable cylinder liners or 'jugs'.
+The [Deutz 912](https://www.deutzusa.com/fileadmin/contents/com/engines/datasheets/en/FL_912_Marine_EN.pdf) series are air cooled direct-injection diesel engines with individually replaceable cylinder liners or 'jugs'.
 It is known for being extremely long lasting and fuel efficient.
 It is available in 3-6 cylinder versions which share the same cylinder heads but different crankcases and crankshafts.
 The 4 cylinder version (F4L912) produces 51 kW (68 hp) which is sufficient for this project.
@@ -57,10 +57,10 @@ The 4BT is commonly reported to be noisy, but it is most likely quieter than the
 
 The Perkins 4.236 is a water cooled 4 cylinder, 236 cubic inch (3.9L) directed-injected diesel engine.
 It was produced from 1964 and had a production run of over 30 years with over 2 million being made.
-It has replacable dry cylinder liners.
+It has replaceable dry cylinder liners.
 It can produce around 63 kW (86 hp).
 It is surprisingly difficult to find information on the weight, with estimates ranging from 580 lbs to over 1200 lbs.
-The figures on the upper end of that range are likely referring to entire gen-sets or auxilary equipment.
+The figures on the upper end of that range are likely referring to entire gen-sets or auxiliary equipment.
 The actual dry weight of the engine is likely on the lower end since it is generally accepted that the Perkins 4.236 is slightly lighter, and smaller than the Cummins 4BT.
 The Perkins 4.236 is a noisier engine than most passenger car engines, but by many accounts it is quieter than the 4BT or Deutz 912.
 
@@ -78,7 +78,7 @@ The Perkins 4.236 is a noisier engine than most passenger car engines, but by ma
 
 Any of the engines mentioned above would make fine powerplants for a heavy-duty hybrid conversion.
 They are all renowned for their efficiency and durability, and I think they are all cool in different ways.
-I think the Deutz 912 series engines are extremely cool because of the replacable cylinder jugs and being air cooled.
+I think the Deutz 912 series engines are extremely cool because of the replaceable cylinder jugs and being air cooled.
 But it does make it more difficult to do a vegetable oil conversion in the future and I don't want to eliminate that possibility.
 Ultimately, the Cummins 4BT is the best choice. It has the best aftermarket support and availability in North America.
 Being liquid cooled it is the most straightforward to convert to run on vegetable oil eventually.
@@ -118,7 +118,7 @@ The ZF 5 has a bellhousing integrated into the transmission casting making it ch
 #### Aisin AX-15
 
 The Aisin [AX-15](https://4btengines.com/how-to-pick-the-right-transmission-for-your-4bt-cummins/?srsltid=AfmBOoopXrOEafVLXl0oa4Ln5MF7Tm1M9lwuARPaK-XaYYUYsaXTQq8p) transmission is a 5 speed manual transmission used in Jeeps and the Dodge Dakota from 1989 to 1999.
-It has a separate bellhousing like the NV4500 making is easy to use with other engines with a custom bellhousing adapter.
+It has a separate bellhousing like the NV4500 making it easy to use with other engines with a custom bellhousing adapter.
 The ratios for the gears are as follows, along with the percent decrease in ratio from the previous gear.
 
 | Gear | Ratio | Percent Decrease from Previous Gear
@@ -174,7 +174,7 @@ Locking torque converters can prevent the torque converter from slipping once th
 #### GM 4L60-E
 
 The [4L60-E](https://www.novak-adapt.com/knowledge/transmissions/automatic/4l60e.html) transmission is a 4 speed automatic with a locking torque converter and a tall overdrive gear and was introduced in 1990.
-It weighs roughtly 146 lbs dry / 162 lbs wet and is 21.9" long including the bellhousing, which is removable.
+It weighs roughly 146 lbs dry / 162 lbs wet and is 21.9" long including the bellhousing, which is removable.
 It is electrically controlled allowing an external controller to perform gear shifts, control torque converter lockup, and adjust shift firmness.
 
 | Gear | Ratio | Percent Decrease from Previous Gear
@@ -207,7 +207,7 @@ The 4L80 does not have a removable bellhousing although due to the transmission'
 
 #### Ford E40D
 
-The [E40D](https://www.dieselhub.com/transmission/e4od.html) is i 4 speed automatic with a locking torque converter and a tall overdrive gear.
+The [E40D](https://www.dieselhub.com/transmission/e4od.html) is a 4 speed automatic with a locking torque converter and a tall overdrive gear.
 It was in Ford trucks from 1989-1998.
 It is around 31.5" long according to a user on the [Ranger Station](https://www.therangerstation.com/forums/threads/e4od-length.103934/) forum and weighs ~270 lbs.
 It is unclear if this is wet or dry weight.
@@ -254,8 +254,8 @@ The following tables show the traction force produced at the tire contact surfac
 |        3.73        |   4,024.0   |  17,898.9 |
 |        4.10        |   4,422.8   |  19,672.5 |
 
-All transmissions would be able to move the Travelall up SF's Bradford St with all rear axle ratios.
-The E40D is the largest and heaviest, and being a Ford specific transmission doesn't have as much adapter suport as the GM 4L60 and 4L80 so for that reason the E40D will not be used.
+All transmissions would be able to move the Travelall up SF's Bradford St with all rear axle ratios, with the exception of the 4L80 with 3.07 gearing.
+The E40D is the largest and heaviest, and being a Ford specific transmission doesn't have as much adapter support as the GM 4L60 and 4L80 so for that reason the E40D will not be used.
 The 4L60 is the smallest and lightest and would be the clear choice if it weren't for concerns over reliability.
 For that reason the 4L80 will be used, if this project uses an automatic transmission.
 
@@ -323,11 +323,11 @@ Regardless, using a manual transmission as a reduction box for the electric moto
 
 
 There are many electric [motors](https://openinverter.org/wiki/Motors) which are suitable for electric vehicle conversion. 
-Although any type of motor can work in theory, modern EVs use AC synchronous motors, generally permanent magnent synchronous motors (PMSMs) due to their high efficiency and power density. 
+Although any type of motor can work in theory, modern EVs use AC synchronous motors, generally permanent magnet synchronous motors (PMSMs) due to their high efficiency and power density. 
 Used motors from commercial electric vehicles are generally more cost effective compared to sourcing an industrial motor. Additionally, there are a limited number of EV conversion specific motors like the NetGain Hyper9 motor.
 
 Many commercial EVs have motors where the motor casting is integrated into the transaxle.
-The most useful motors will be those which can be separated from their transaxles such that they can fit alonside the rear driveshaft.
+The most useful motors will be those which can be separated from their transaxles such that they can fit alongside the rear driveshaft.
 The most suitable options are the Nissan EM57 / EM61 and the NetGain Hyper9 motors. 
 
 #### Nissan Leaf EM57 Motor
@@ -363,7 +363,7 @@ The lowest-risk placement option is to plan on placing the motor behind the rear
 The [EM61](https://en.wikipedia.org/wiki/Nissan_EM_motor) is a PMSM motor used in the first generation Nissan Leaf from 2010 to 2012 and was capable of producing 80 kW (inverter limited).
 It is almost identical in specs to the EM57 motor, although slightly heavier, and also needs a reduction gearbox between the motor and the driveshaft.
 The slimmer profile makes the EM61 easier in many cases to mount in EV conversion applications.
-Is is common, although less so than the EM57 and similarly available for around $1000 USD used with a large community of knowledge and aftermarket support.
+It is common, although less so than the EM57 and similarly available for around $1000 USD used with a large community of knowledge and aftermarket support.
 
 <figure markdown="span">
   ![EM61 Motor](images/em61.png)
@@ -412,7 +412,7 @@ It is possible to fit the EM61 between the frame rail and driveshaft.
 
 The EM61 and Hyper9 motors are both able to fit in between the frame rail and the driveshaft which allows for the most efficient packaging and leaves the most room for a battery pack but EM61 is more powerful and cheaper, even when buying used.
 The EM61 will be used for this project.
-The Hyper9 will be a backup option if for an unforseen reason the EM61 is found to not be possible during implementation.
+The Hyper9 will be a backup option if for an unforeseen reason the EM61 is found to not be possible during implementation.
 
 ## Transfer Case Selection
 
@@ -427,7 +427,7 @@ Most transfer cases mount directly to the rear of a transmission via an adapter 
 The exception are divorced transfer cases.
 A divorced transfer case means it was not mounted directly behind the transmission but instead connected via a short jackshaft and therefore has yokes or flanges on all input / output shafts.
 
-4x4 International Travelalls came equipped with passenger drop transfer cases meaning the transfer case is offset to the pasenger side when installed normally
+4x4 International Travelalls came equipped with passenger drop transfer cases meaning the transfer case is offset to the passenger side when installed normally
 Reversing the transfer case would mean the electric motor would have to be offset to the drivers side
 This would work, but it prevents eventually converting the project to be four wheel drive (out of scope of this project but it would be nice to have the option).
 Some transfer cases are possible to modify to have two front and two rear inputs / outputs vs the usual two front one rear.
@@ -440,7 +440,7 @@ In general only gear driven transfer cases are possible to twin stick.
 Gear driven cases are usually less efficient than their chain driven counterparts due to the increased rotating mass and gear oil lubrication vs the lighter rotating mass and ATF in chain driven cases.
 Some OEMs spec ATF in their gear driven cases to improve efficiency.
 
-Considering the need for a divorced, drivers drop, and twin stick moddable transfer case there is one clear option: the NP205 used in 1970s Ford trucks.
+Considering the need for a divorced, drivers drop, and twin stick modifiable transfer case there is one clear option: the NP205 used in 1970s Ford trucks.
 It is a gear driven transfer case with manual shift and optional 4x4 sensor.
 Aftermarket transfer cases would also work but are much more expensive than a used NP205.
 
@@ -449,7 +449,7 @@ Aftermarket transfer cases would also work but are much more expensive than a us
 
 The IH Travelall came from the factory with two fuel tank configurations. Some had a single large fuel tank between the frame rails behind the rear axle.
 The other option was two smaller "saddle" fuel tanks mounted on the outside of the frame rail near the center of the vehicle.
-The placement of the battery conflicts with the saddle tanks meaning that a rear gas tank is required. 
+The placement of the battery conflicts with the saddle tanks meaning that a rear gas tank is required.
 
 <figure markdown="span">
   ![Rear Gas Tank](images/rear_gas_tank.png)
@@ -497,7 +497,7 @@ If so, the rear drum brakes will be modified to include a parking brake cable.
 
 ## Controls
 
-The following state diagram hows in more detail the implementation of the drive modes specified in the [Vehicle Control module](vehicle_control_module_design.md#drive-mode-selection).
+The following state diagram shows in more detail the implementation of the drive modes specified in the [Vehicle Control module](vehicle_control_module_design.md#drive-mode-selection).
 In order to smoothly transition between drive modes, the transfer case must be shifted when the driveshafts are at approximately equal speeds.
 For example, when switching between electric mode and hybrid mode first the engine must be on, then the engine must shift into an appropriate RPM for the desired power and road speed, then the engine RPMs are brought up to match the motor speed.
 Once the motor and engine shafts are within ~50 rpm the transfer case can be shifted coupling the two shafts together.
@@ -532,10 +532,10 @@ state powered as "Powered" {
   state gas_mode as "Gas Mode" {
 
     gas_mode --> motor_speed_match: Hybrid or Electric mode requested
-    motor_speed_match --> shifing_gas_to_hybrid: Motor speed matched and \nHybrid or Electric mode requested
+    motor_speed_match --> shifting_gas_to_hybrid: Motor speed matched and \nHybrid or Electric mode requested
 
     state motor_speed_match as "Motor Speed Matching"
-    state shifing_gas_to_hybrid as "Shifting Gas to Hybrid"
+    state shifting_gas_to_hybrid as "Shifting Gas to Hybrid"
 
     gas_mode --> gas_mode: Gas mode requested
 
@@ -603,7 +603,7 @@ The following sensors are required for the powertrain
     - The NP205 transfer case only came in manual shift, not electric shift.
     - Two linear actuators can be used to shift each shift rail.
     - Because of the possibility of transfer case binding lead screw actuators require additional care to prevent stalling and damaging the actuator
-    - Pneumatic actuators are the best solution because they can shift quickl and hold pressure until a shift is complete if the gears are binding but requires an onboard air compressor.
+    - Pneumatic actuators are the best solution because they can shift quickly and hold pressure until a shift is complete if the gears are binding but requires an onboard air compressor.
 - Injection pump actuator
     - An actuator is required to turn the throttle on the injection pump.
     - A servo motor would work well in this application although depending on the injection pump return spring strength a servo may be expensive.

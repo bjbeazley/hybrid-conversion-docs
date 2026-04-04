@@ -33,7 +33,7 @@ It is up to the connecting module to handle routing of the brake lines, brake ac
 
 #### Steering
 A physical interface via the steering rack is exposed.
-It us up to the connecting module to handle the connection from the steering wheel to the steering rack, and any power assist.
+It is up to the connecting module to handle the connection from the steering wheel to the steering rack, and any power assist.
 
 #### Parking Brake
 A physical interface via the parking brake mechanism is exposed. It is up to the connecting module to handle the connection to the parking brake e.g. via a cable.
@@ -68,17 +68,17 @@ An electrical interface to the high voltage bus is exposed.
 This module includes:
 
 - Noise, Vibration, and Harshness (NVH)
-- Guage cluster
+- Gauge cluster
 - Occupant safety
 - Climate Control
 
 ### Required Interfaces
 
 #### BMS Interface
-A software interface to the BMS is required to provide battery information in the guage cluster.
+A software interface to the BMS is required to provide battery information in the gauge cluster.
 
 #### Powertrain Telemetry
-A Software interface to the powertrain is required to provide powertrain information to the guage cluster.
+A Software interface to the powertrain is required to provide powertrain information to the gauge cluster.
 
 ## Vehicle Control Module
 
