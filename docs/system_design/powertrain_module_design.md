@@ -80,7 +80,7 @@ Any of the engines mentioned above would make fine powerplants for a heavy-duty 
 They are all renowned for their efficiency and durability, and I think they are all cool in different ways.
 I think the Deutz 912 series engines are extremely cool because of the replacable cylinder jugs and being air cooled.
 But it does make it more difficult to do a vegetable oil conversion in the future and I don't want to eliminate that possibility.
-Ultimately, the Perkins 4.236 is the best choice. It is the smallest and quietest of all the options considered which will make it easier to meet the maximum cabin noise requirement, and to not exceed axle weight ratings.
+Ultimately, the Cummins 4BT is the best choice. It has the best aftermarket support and availability in North America.
 Being liquid cooled it is the most straightforward to convert to run on vegetable oil eventually.
 
 ## Transmission Selection

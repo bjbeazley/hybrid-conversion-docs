@@ -60,8 +60,7 @@ The following requirements indicate the characteristics that the vehicle shall h
 | FR-23 | Vehicle shall take measures to minimize tailpipe emissions |
 | FR-24 | The total cost for the project (excluding the value of personal labor) shall not exceed $20k USD |
 | FR-25 | The total cost for the project (excluding the value of personal labor) shall not exceed $20k USD |
-| FR-26 | The ICE used shall have replaceable cylinder liners |
-| FR-27 | The ICE used shall run on diesel |
+| FR-26 | The ICE used shall run on diesel |
 
 ### Non-Functional Requirements
 
