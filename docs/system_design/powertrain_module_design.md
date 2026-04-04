@@ -93,7 +93,7 @@ As mentioned in the [Vehicle Control](vehicle_control_module_design.md#transmiss
 
 The [NV4500](https://www.novak-adapt.com/knowledge/transmissions/manual/nv4500.html) is a 5 speed manual transmission used in GM and Dodge trucks in the 1990s and 2000s.
 It is available with a wide or narrow gear ratio spread.
-The narrow gear ratio spread will work better with the low RPM of the Perkins 4.236 so that each upshift doesn't require revving to redline only to lug it in the next gear.
+The narrow gear ratio spread will work better with the low RPM of the ICE so that each upshift doesn't require revving to redline only to lug it in the next gear.
 The ratios for the narrow gears are as follows, along with the percent decrease in ratio from the previous gear.
 
 | Gear | Ratio | Percent Decrease from Previous Gear
@@ -135,7 +135,7 @@ The AX-15 is rated for an input torque of 300 ft-lbs.
 
 #### Decision Criteria
 
-All of the transmissions are have overdrive top gears and are able to withstand the torque of the Perkins 4.236.
+All of the transmissions are have overdrive top gears and are able to withstand the torque of a diesel engine.
 This should result in excellent highway fuel economy since the engine RPMs can be kept below 2000 for fuel efficiency.
 
 The AX-15 is a promising option due to the much lighter weight than the NV4500. The main concern is the taller first gear compared to the NV4500. The high weight of a Travelall with the relatively low torque of the Perkins 4.236 risks not being able to climb the steeper hills of San Francisco if the battery is dead.
@@ -165,7 +165,7 @@ With the NV4500 it would be possible to make it up Bradford St. with all availab
 
 ### Automatic
 
-All automatic transmissions would be equipped with a locking low stall torque converter aiming to put the stall speed around 1600 rpm which at the peak of the Perkins 4.236 torque curve.
+All automatic transmissions would be equipped with a locking low stall torque converter aiming to put the stall speed around 1600 rpm which is near the peak torque of most diesel engines.
 Torque converters allow slip between the transmission and engine which is especially useful when accelerating from a stop.
 Torque converters can provide additional torque multiplication when the input and output speeds of the torque converter differ, increasing to a roughly 2x torque multiplication at the stall point.
 This gives vehicles with automatic transmissions the ability to accelerate quickly from a stop or start move a heavy vehicle up a hill without an extremely low first gear ratio at the expense of efficiency since energy is wasted when the torque converter is slipping.
@@ -449,17 +449,11 @@ Aftermarket transfer cases would also work but are much more expensive than a us
 
 The IH Travelall came from the factory with two fuel tank configurations. Some had a single large fuel tank between the frame rails behind the rear axle.
 The other option was two smaller "saddle" fuel tanks mounted on the outside of the frame rail near the center of the vehicle.
-Saddle tanks are better option for this project for two reasons. 
-First, between the frame rails is a convenient location for a battery pack, keeping it close to the electric motor and more protected in the event of a collision.
-Second, saddle tanks makes it easier in the future to run vegetable oil since there are separate tanks for oil and diesel.
-
-Using two fuel tanks requires a mechanism for choosing which tank to draw from, or to transfer fuel from one tank to the other.
-6 port fuel valves (3 supply lines and 3 return lines) are fairly common and often have the ability to switch the signal from two fuel level senders along with the fuel supply so that a single fuel guage can be used to display the fuel level of the currently selected tank.
-[Pollak](https://www.pollakaftermarket.com/en/products/fuel-selector-valves/fuel-tank-selector-valves/3-port-and-6-port-fuel-valves) makes a fuel selector valve which is often recommended as a replacement for out of production or expensive OEM fuel selector valves.
+The placement of the battery conflicts with the saddle tanks meaning that a rear gas tank is required. 
 
 <figure markdown="span">
-  ![Saddle Tanks](images/saddle_tanks.png)
-  <figcaption>Saddle Tanks</figcaption>
+  ![Rear Gas Tank](images/rear_gas_tank.png)
+  <figcaption>Rear Gas Tank</figcaption>
 </figure>
 
 ## Exhaust
@@ -467,7 +461,7 @@ Using two fuel tanks requires a mechanism for choosing which tank to draw from, 
 The most convenient path to route the exhaust is along the inside of the driver's side frame rail.
 To avoid letting exhaust fumes in to open windows the exhaust will be routed over the rear axle so that the tailpipe is behind all doors and retractable windows.
 The exhaust pipe will be directed to the outside of the frame once it clears the rear axle to give as much clearance to the battery as possible. In addition, heat shielding will be installed between the exhaust and the battery.
-The Perkins 4.236 engine exhaust manifold is on the passenger side, so a crossover pipe will be required to direct the exhaust to the drivers side of the vehicle.
+The Cummins 4BT engine exhaust manifold is on the passenger side, so a crossover pipe will be required to direct the exhaust to the drivers side of the vehicle.
 The crossover pipe will be located near the bellhousing between the engine and transmission.
 
 <figure markdown="span">
