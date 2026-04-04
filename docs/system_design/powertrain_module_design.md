@@ -93,7 +93,7 @@ As mentioned in the [Vehicle Control](vehicle_control_module_design.md#transmiss
 
 The [NV4500](https://www.novak-adapt.com/knowledge/transmissions/manual/nv4500.html) is a 5 speed manual transmission used in GM and Dodge trucks in the 1990s and 2000s.
 It is available with a wide or narrow gear ratio spread.
-The narrow gear ratio spread will work better with the low RPM of the Perkins 4.236 so that each upshift doesn't require revving to redline only to lug it in the next gear.
+The narrow gear ratio spread will work better with the low RPM of the ICE so that each upshift doesn't require revving to redline only to lug it in the next gear.
 The ratios for the narrow gears are as follows, along with the percent decrease in ratio from the previous gear.
 
 | Gear | Ratio | Percent Decrease from Previous Gear
@@ -135,37 +135,37 @@ The AX-15 is rated for an input torque of 300 ft-lbs.
 
 #### Decision Criteria
 
-All of the transmissions are have overdrive top gears and are able to withstand the torque of the Perkins 4.236.
+All of the transmissions are have overdrive top gears and are able to withstand the torque of a diesel engine.
 This should result in excellent highway fuel economy since the engine RPMs can be kept below 2000 for fuel efficiency.
 
-The AX-15 is a promising option due to the much lighter weight than the NV4500. The main concern is the taller first gear compared to the NV4500. The high weight of a Travelall with the relatively low torque of the Perkins 4.236 risks not being able to climb the steeper hills of San Francisco if the battery is dead.
+The AX-15 is a promising option due to the much lighter weight than the NV4500. The main concern is the taller first gear compared to the NV4500. The high weight of a Travelall with the Cummins 4BT's 265 ft-lbs peak torque still makes it difficult to climb the steeper hills of San Francisco if the battery is dead without high differential gearing.
 
 The steepest street in San Francisco is Bradford Street at at 41% grade ($\arctan(0.41) = 22.29 ^{\circ}$).
 Assuming the travelall weighs 6000 lbs or 2700 kg (batteries will increase the weight beyond stock) it would take $2700 kg * 9.81m/s^2 \times \sin(22.29^{\circ}) = 10046 N$ of force to go up the hill.
-Assuming 32" diameter tires the following table shows the maximum traction force at the road contact surface produced in first gear with several rear differential ratios assuming no drivetrain losses and using the peak torque of the Perkins 4.236 of 185 ft-lbs.
-Even with 4.10 gearing in the differential, which would result in high RPMs on the highway and worse fuel economy, the Travelall would struggle to move up the hill with the AX-15.
+Assuming 32" diameter tires the following table shows the maximum traction force at the road contact surface produced in first gear with several rear differential ratios assuming no drivetrain losses and using the peak torque of the Cummins 4BT of 265 ft-lbs.
+With the increased torque of the 4BT, the AX-15 is still limited in its ability to climb steep grades without high differential gearing.
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :-: | :-: | :-: |
-| 3.07 | 1,631.44 | 7,256.99 |
-| 3.54 | 1,881.20 | 8,368.00 |
-| 3.73 | 1,982.17 | 8,817.13 |
-| 4.10 | 2,178.79 | 9,691.75 |
+| 3.07 | 2,340.05 | 10,408.58 |
+| 3.54 | 2,698.83 | 12,004.62 |
+| 3.73 | 2,844.07 | 12,650.93 |
+| 4.10 | 3,124.66 | 13,898.83 |
 
 The following table shows the force produced by the NV4500 in first gear.
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :-: | :-: | :-: |
-| 3.07 | 2,389.6 | 10,629.7 |
-| 3.54 | 2,755.5 | 12,257.0 |
-| 3.73 | 2,903.4 | 12,914.9 |
-| 4.10 | 3,191.4 | 14,196.0 |
+| 3.07 | 3,426.93 | 15,242.77 |
+| 3.54 | 3,952.64 | 17,580.06 |
+| 3.73 | 4,165.35 | 18,526.29 |
+| 4.10 | 4,578.21 | 20,362.26 |
 
 With the NV4500 it would be possible to make it up Bradford St. with all available differential ratios. For that reason, the NV4500 will be used for this project despite its weight.
 
 ### Automatic
 
-All automatic transmissions would be equipped with a locking low stall torque converter aiming to put the stall speed around 1600 rpm which at the peak of the Perkins 4.236 torque curve.
+All automatic transmissions would be equipped with a locking low stall torque converter aiming to put the stall speed around 1600 rpm which is near the peak torque of most diesel engines.
 Torque converters allow slip between the transmission and engine which is especially useful when accelerating from a stop.
 Torque converters can provide additional torque multiplication when the input and output speeds of the torque converter differ, increasing to a roughly 2x torque multiplication at the stall point.
 This gives vehicles with automatic transmissions the ability to accelerate quickly from a stop or start move a heavy vehicle up a hill without an extremely low first gear ratio at the expense of efficiency since energy is wasted when the torque converter is slipping.
@@ -230,31 +230,31 @@ The following tables show the traction force produced at the tire contact surfac
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :----------------: | :---------: | :-------: |
-|        3.07        |   2,606.9   |  11,596.0 |
-|        3.54        |   3,006.0   |  13,371.3 |
-|        3.73        |   3,167.3   |  14,089.0 |
-|        4.10        |   3,481.5   |  15,486.6 |
+|        3.07        |   3,738.8   |  16,629.7 |
+|        3.54        |   4,312.2   |  19,180.6 |
+|        3.73        |   4,543.6   |  20,210.2 |
+|        4.10        |   4,993.6   |  22,212.8 |
 
 
 **4L80**
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :----------------: | :---------: | :-------: |
-|        3.07        |   2,112.8   |  9,398.1  |
-|        3.54        |   2,436.2   |  10,836.9 |
-|        3.73        |   2,567.0   |  11,418.5 |
-|        4.10        |   2,821.6   |  12,551.2 |
+|        3.07        |   3,029.5   |  13,475.4 |
+|        3.54        |   3,494.2   |  15,541.5 |
+|        3.73        |   3,682.8   |  16,380.4 |
+|        4.10        |   4,047.5   |  18,002.7 |
 
 **E40D**
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :----------------: | :---------: | :-------: |
-|        3.07        |   2,308.7   |  10,269.7 |
-|        3.54        |   2,662.2   |  11,841.9 |
-|        3.73        |   2,805.1   |  12,477.5 |
-|        4.10        |   3,083.3   |  13,715.2 |
+|        3.07        |   3,310.6   |  14,725.6 |
+|        3.54        |   3,818.4   |  16,984.8 |
+|        3.73        |   4,024.0   |  17,898.9 |
+|        4.10        |   4,422.8   |  19,672.5 |
 
-All transmissions would be able to move the Travelall up SF's Bradford St with all rear axle ratios, with the exception of the 4L80 with 3.07 gearing.
+All transmissions would be able to move the Travelall up SF's Bradford St with all rear axle ratios.
 The E40D is the largest and heaviest, and being a Ford specific transmission doesn't have as much adapter suport as the GM 4L60 and 4L80 so for that reason the E40D will not be used.
 The 4L60 is the smallest and lightest and would be the clear choice if it weren't for concerns over reliability.
 For that reason the 4L80 will be used, if this project uses an automatic transmission.
@@ -449,17 +449,11 @@ Aftermarket transfer cases would also work but are much more expensive than a us
 
 The IH Travelall came from the factory with two fuel tank configurations. Some had a single large fuel tank between the frame rails behind the rear axle.
 The other option was two smaller "saddle" fuel tanks mounted on the outside of the frame rail near the center of the vehicle.
-Saddle tanks are better option for this project for two reasons. 
-First, between the frame rails is a convenient location for a battery pack, keeping it close to the electric motor and more protected in the event of a collision.
-Second, saddle tanks makes it easier in the future to run vegetable oil since there are separate tanks for oil and diesel.
-
-Using two fuel tanks requires a mechanism for choosing which tank to draw from, or to transfer fuel from one tank to the other.
-6 port fuel valves (3 supply lines and 3 return lines) are fairly common and often have the ability to switch the signal from two fuel level senders along with the fuel supply so that a single fuel guage can be used to display the fuel level of the currently selected tank.
-[Pollak](https://www.pollakaftermarket.com/en/products/fuel-selector-valves/fuel-tank-selector-valves/3-port-and-6-port-fuel-valves) makes a fuel selector valve which is often recommended as a replacement for out of production or expensive OEM fuel selector valves.
+The placement of the battery conflicts with the saddle tanks meaning that a rear gas tank is required. 
 
 <figure markdown="span">
-  ![Saddle Tanks](images/saddle_tanks.png)
-  <figcaption>Saddle Tanks</figcaption>
+  ![Rear Gas Tank](images/rear_gas_tank.png)
+  <figcaption>Rear Gas Tank</figcaption>
 </figure>
 
 ## Exhaust
@@ -467,7 +461,7 @@ Using two fuel tanks requires a mechanism for choosing which tank to draw from, 
 The most convenient path to route the exhaust is along the inside of the driver's side frame rail.
 To avoid letting exhaust fumes in to open windows the exhaust will be routed over the rear axle so that the tailpipe is behind all doors and retractable windows.
 The exhaust pipe will be directed to the outside of the frame once it clears the rear axle to give as much clearance to the battery as possible. In addition, heat shielding will be installed between the exhaust and the battery.
-The Perkins 4.236 engine exhaust manifold is on the passenger side, so a crossover pipe will be required to direct the exhaust to the drivers side of the vehicle.
+The Cummins 4BT engine exhaust manifold is on the passenger side, so a crossover pipe will be required to direct the exhaust to the drivers side of the vehicle.
 The crossover pipe will be located near the bellhousing between the engine and transmission.
 
 <figure markdown="span">
