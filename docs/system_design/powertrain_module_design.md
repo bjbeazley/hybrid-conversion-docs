@@ -138,28 +138,28 @@ The AX-15 is rated for an input torque of 300 ft-lbs.
 All of the transmissions are have overdrive top gears and are able to withstand the torque of a diesel engine.
 This should result in excellent highway fuel economy since the engine RPMs can be kept below 2000 for fuel efficiency.
 
-The AX-15 is a promising option due to the much lighter weight than the NV4500. The main concern is the taller first gear compared to the NV4500. The high weight of a Travelall with the relatively low torque of the Perkins 4.236 risks not being able to climb the steeper hills of San Francisco if the battery is dead.
+The AX-15 is a promising option due to the much lighter weight than the NV4500. The main concern is the taller first gear compared to the NV4500. The high weight of a Travelall with the Cummins 4BT's 265 ft-lbs peak torque still makes it difficult to climb the steeper hills of San Francisco if the battery is dead without high differential gearing.
 
 The steepest street in San Francisco is Bradford Street at at 41% grade ($\arctan(0.41) = 22.29 ^{\circ}$).
 Assuming the travelall weighs 6000 lbs or 2700 kg (batteries will increase the weight beyond stock) it would take $2700 kg * 9.81m/s^2 \times \sin(22.29^{\circ}) = 10046 N$ of force to go up the hill.
-Assuming 32" diameter tires the following table shows the maximum traction force at the road contact surface produced in first gear with several rear differential ratios assuming no drivetrain losses and using the peak torque of the Perkins 4.236 of 185 ft-lbs.
-Even with 4.10 gearing in the differential, which would result in high RPMs on the highway and worse fuel economy, the Travelall would struggle to move up the hill with the AX-15.
+Assuming 32" diameter tires the following table shows the maximum traction force at the road contact surface produced in first gear with several rear differential ratios assuming no drivetrain losses and using the peak torque of the Cummins 4BT of 265 ft-lbs.
+With the increased torque of the 4BT, the AX-15 is still limited in its ability to climb steep grades without high differential gearing.
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :-: | :-: | :-: |
-| 3.07 | 1,631.44 | 7,256.99 |
-| 3.54 | 1,881.20 | 8,368.00 |
-| 3.73 | 1,982.17 | 8,817.13 |
-| 4.10 | 2,178.79 | 9,691.75 |
+| 3.07 | 2,340.05 | 10,408.58 |
+| 3.54 | 2,698.83 | 12,004.62 |
+| 3.73 | 2,844.07 | 12,650.93 |
+| 4.10 | 3,124.66 | 13,898.83 |
 
 The following table shows the force produced by the NV4500 in first gear.
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :-: | :-: | :-: |
-| 3.07 | 2,389.6 | 10,629.7 |
-| 3.54 | 2,755.5 | 12,257.0 |
-| 3.73 | 2,903.4 | 12,914.9 |
-| 4.10 | 3,191.4 | 14,196.0 |
+| 3.07 | 3,426.93 | 15,242.77 |
+| 3.54 | 3,952.64 | 17,580.06 |
+| 3.73 | 4,165.35 | 18,526.29 |
+| 4.10 | 4,578.21 | 20,362.26 |
 
 With the NV4500 it would be possible to make it up Bradford St. with all available differential ratios. For that reason, the NV4500 will be used for this project despite its weight.
 
@@ -230,31 +230,31 @@ The following tables show the traction force produced at the tire contact surfac
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :----------------: | :---------: | :-------: |
-|        3.07        |   2,606.9   |  11,596.0 |
-|        3.54        |   3,006.0   |  13,371.3 |
-|        3.73        |   3,167.3   |  14,089.0 |
-|        4.10        |   3,481.5   |  15,486.6 |
+|        3.07        |   3,738.8   |  16,629.7 |
+|        3.54        |   4,312.2   |  19,180.6 |
+|        3.73        |   4,543.6   |  20,210.2 |
+|        4.10        |   4,993.6   |  22,212.8 |
 
 
 **4L80**
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :----------------: | :---------: | :-------: |
-|        3.07        |   2,112.8   |  9,398.1  |
-|        3.54        |   2,436.2   |  10,836.9 |
-|        3.73        |   2,567.0   |  11,418.5 |
-|        4.10        |   2,821.6   |  12,551.2 |
+|        3.07        |   3,029.5   |  13,475.4 |
+|        3.54        |   3,494.2   |  15,541.5 |
+|        3.73        |   3,682.8   |  16,380.4 |
+|        4.10        |   4,047.5   |  18,002.7 |
 
 **E40D**
 
 | Differential Ratio | Force (lbf) | Force (N) |
 | :----------------: | :---------: | :-------: |
-|        3.07        |   2,308.7   |  10,269.7 |
-|        3.54        |   2,662.2   |  11,841.9 |
-|        3.73        |   2,805.1   |  12,477.5 |
-|        4.10        |   3,083.3   |  13,715.2 |
+|        3.07        |   3,310.6   |  14,725.6 |
+|        3.54        |   3,818.4   |  16,984.8 |
+|        3.73        |   4,024.0   |  17,898.9 |
+|        4.10        |   4,422.8   |  19,672.5 |
 
-All transmissions would be able to move the Travelall up SF's Bradford St with all rear axle ratios, with the exception of the 4L80 with 3.07 gearing.
+All transmissions would be able to move the Travelall up SF's Bradford St with all rear axle ratios.
 The E40D is the largest and heaviest, and being a Ford specific transmission doesn't have as much adapter suport as the GM 4L60 and 4L80 so for that reason the E40D will not be used.
 The 4L60 is the smallest and lightest and would be the clear choice if it weren't for concerns over reliability.
 For that reason the 4L80 will be used, if this project uses an automatic transmission.
