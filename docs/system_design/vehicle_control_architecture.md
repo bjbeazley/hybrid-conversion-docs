@@ -1,4 +1,8 @@
-# Vehicle Control Module Design
+# Vehicle Control Architecture
+
+This document is a high level design document for the vehicle control system.
+It documents the decisions made regarding drive modes, driver interface, and vehicle controls, as well as the reasoning behind those decisions.
+Detailed design documents will elaborate on implementation specifics at a later date.
 
 ## Driver Experience
 
