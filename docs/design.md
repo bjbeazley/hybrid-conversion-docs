@@ -11,11 +11,11 @@ The [V-Model](https://en.wikipedia.org/wiki/V-model) of systems development was 
 
 ## High Level Design
 
-[Powertrain Architecture](system_design/powertrain_module_design.md)
+[Powertrain Architecture](system_design/powertrain_architecture.md)
 
-[High Voltage Architecture](system_design/high_voltage_module_design.md)
+[High Voltage Architecture](system_design/high_voltage_architecture.md)
 
-[Vehicle Control Architecture](system_design/vehicle_control_module_design.md)
+[Vehicle Control Architecture](system_design/vehicle_control_architecture.md)
 
 
 ## Module Design

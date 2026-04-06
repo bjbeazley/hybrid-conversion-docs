@@ -1,10 +1,8 @@
-# High Voltage Module Design
+# High Voltage Architecture
 
-This document contains the detailed design of the high voltage module.
-The purpose is to provide concrete information for the powertrain module and act as a decision log, containing not only the final design, but an explanation of why the design was chosen over alternatives.
-For now, the scope of the design is limited to parts selection for major components like the battery.
-Details like mounting brackets and wiring are currently unspecified because not enough information is available to model them accurately.
-Once a donor body is acquired more detail can be added.
+This document is a high level design document for the high voltage system.
+It documents the decisions made regarding major components like the battery and charging system, as well as the reasoning behind those decisions.
+Detailed design documents will elaborate on implementation specifics at a later date.
 
 
 ## Battery Modules

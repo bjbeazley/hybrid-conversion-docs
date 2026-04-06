@@ -1,10 +1,8 @@
-# Powertrain Module Design
+# Powertrain Architecture
 
-This document contains the detailed design of the powertrain module.
-The purpose is to provide concrete information for the powertrain module and act as a decision log, containing not only the final design, but an explanation of why the design was chosen over alternatives.
-The scope of the design is limited to parts selection for major components like the engine, transmissions, and electric motor and rough placement in the chassis.
-Details like mounting brackets, driveshafts, exhaust, wiring, and fuel lines are left unspecified outside of rough location because not enough information is available to model them accurately.
-Once the donor Travelall body is acquired a more detailed design can be created.
+This document is a high level design document for the powertrain.
+It documents the decisions made regarding major components like the engine, transmission, and electric motor, as well as the reasoning behind those decisions.
+Detailed design documents will elaborate on implementation specifics at a later date.
 
 ## Engine Selection
 
@@ -85,7 +83,7 @@ Being liquid cooled it is the most straightforward to convert to run on vegetabl
 
 ## Transmission Selection
 
-As mentioned in the [Vehicle Control](vehicle_control_module_design.md#transmission) documentation it is not yet determined if a manual or automatic transmission will be used. The following sections cover transmission selection grouped by manual or automatic.
+As mentioned in the [Vehicle Control](vehicle_control_architecture.md#transmission) documentation it is not yet determined if a manual or automatic transmission will be used. The following sections cover transmission selection grouped by manual or automatic.
 
 ### Manual
 
@@ -478,7 +476,7 @@ The crossover pipe will be located near the bellhousing between the engine and t
 ## Steering
 
 The 1960s IH Travelalls may or may not have power steering.
-As mentioned in [Vehicle Control Module](vehicle_control_module_design.md#steering), non power steering is acceptable and assist will not be added, at least for now.
+As mentioned in [Vehicle Control Architecture](vehicle_control_architecture.md#steering), non power steering is acceptable and assist will not be added, at least for now.
 Travelalls may or may not have collapsible steering columns which is a safety concern so the steering column will be upgraded to use a collapsible column if not already equipped.
 
 ## Brakes
@@ -497,7 +495,7 @@ If so, the rear drum brakes will be modified to include a parking brake cable.
 
 ## Controls
 
-The following state diagram shows in more detail the implementation of the drive modes specified in the [Vehicle Control module](vehicle_control_module_design.md#drive-mode-selection).
+The following state diagram shows in more detail the implementation of the drive modes specified in the [Vehicle Control module](vehicle_control_architecture.md#drive-mode-selection).
 In order to smoothly transition between drive modes, the transfer case must be shifted when the driveshafts are at approximately equal speeds.
 For example, when switching between electric mode and hybrid mode first the engine must be on, then the engine must shift into an appropriate RPM for the desired power and road speed, then the engine RPMs are brought up to match the motor speed.
 Once the motor and engine shafts are within ~50 rpm the transfer case can be shifted coupling the two shafts together.
